@@ -34,7 +34,8 @@ public extension UIImage {
         return data1 == data2
     }
 
-    // Want to download any image from its web url? Right here pal.
+    // Want to asynchronously download any image from its web url? Right here pal!
+    // the completion() block is called in main thread for UI updates purposes.
     public class func getImageWithURL(_ url:URL, completion:@escaping (_ img:UIImage?) -> Void) {
         
         DispatchQueue.global(qos: .utility).async {

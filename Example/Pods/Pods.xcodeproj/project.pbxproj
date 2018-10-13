@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E483AECB368FF4E3B925538C85DBF46 /* BadasSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 081D84F5F7118EAC4E9EC3B28920E26F /* BadasSwift-dummy.m */; };
 		232511FA9BF4B27C8A8F77BBC3F472D3 /* Pods-BadasSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 960FC16B48899B6769BFFCFE572F0FF9 /* Pods-BadasSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2751CC351FE20473124C9CE0BC8FEF65 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FD2E128B81E48588C89251CDD819D9 /* UIViewController+Utils.swift */; };
-		35C51894F578943CE567672357C74B46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1427DD0302DA501BFF0E846F8D2BF5CD /* UIKit.framework */; };
+		2FB6F4C3B4E56E812C1806F04395D81D /* VoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = F96FC7EDA2032C3ABF297ADCA4A0061B /* VoteView.m */; };
 		3FB3393D434377A28E224F1E850E57CB /* Pods-BadasSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD45D6C921AF22FB2D21449690FEB93A /* Pods-BadasSwift_Tests-dummy.m */; };
 		40C67EA5C3D6E56CA91CD82C741E416F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */; };
-		415DE0C1727AB5ED40476AC253FD6330 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC238B105929CA66A19E1DE29F70E58F /* UIImage+Utils.swift */; };
-		531EA42B4C165C6AA89D4D4A318F644E /* BadasSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1953C03B6B7501363EE7C4CA3FD5CB6A /* BadasSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53ABF231882862011AA6AFA66F1DDF43 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520613A6039AF890209ABEF4EC381D88 /* String+Utils.swift */; };
+		57554215B7B7AEF813875E5F93A6AB6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */; };
+		663D8E1BEFCA546064E75931FC2DD2A4 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF6CACAD51D8173A58A02A2D88677A /* UIImageView+Utils.swift */; };
+		6644AE3D1AC92866D66B174D7902A3F1 /* NSLayoutConstraint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD9C1BA66DD408AB9B53D291D8B4A4 /* NSLayoutConstraint+Utils.swift */; };
+		68CD4DA1D24EE44BF387865FB2B6771C /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4136C29F695EEDEFB129884E7645C /* UIView+Utils.swift */; };
 		6E71FEFD1F7E363DDBA9DCB3FED500F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */; };
-		8CAC228DD54DCA88C65CF7E826860AB9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28532A6402F0DE0FD1D00B0C7871511D /* MapKit.framework */; };
+		7AA8E7E949CD2CA6ED826AA28CD1906F /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AC6CE252DF728A66C7C5E948763022 /* UIViewController+Utils.swift */; };
+		98E25CE47F0B6774442CF644B45F2409 /* BadasSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC39186336D677DDD08B26914D994CFA /* BadasSwift-dummy.m */; };
+		AE579F2FF72C073B98ABEB6530AF7E8E /* VoteView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1847482A581E8FEA44D063E17FA8B3C6 /* VoteView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1335F755AB3348C1E199419B58259DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28532A6402F0DE0FD1D00B0C7871511D /* MapKit.framework */; };
 		BCFD1A4C7FB4C6794FF13B5BC1D37B96 /* Pods-BadasSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDEFCC79662AFADDBA750D2A2A570E1 /* Pods-BadasSwift_Example-dummy.m */; };
-		CC3D6CAECBA2592D9052E898D94FF4A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */; };
+		C640CE6454BD350E64737C0D0390B33D /* BadasSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E19AF8CB5490B58AA9D108AA76435CF /* BadasSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF4FD235EF9A24834DDEE3B6E3825BD9 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E07EFAFF80B7297961438E68923BFF /* UIImage+Utils.swift */; };
+		E3A02AA77B15416E5A225EED5AE86685 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1427DD0302DA501BFF0E846F8D2BF5CD /* UIKit.framework */; };
 		F90BFC539969341D6FA9A6CFDC59367E /* Pods-BadasSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501B3734A1E85C7B7BF481802BCFC3B3 /* Pods-BadasSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,7 +33,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CCF50C473F0102129F20315F5E47AD01;
+			remoteGlobalIDString = 303F795E8B3DDD19C247F96A679A353E;
 			remoteInfo = BadasSwift;
 		};
 		E9D1847E8D5CD0B361C9E3911B088BA0 /* PBXContainerItemProxy */ = {
@@ -40,41 +46,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		081D84F5F7118EAC4E9EC3B28920E26F /* BadasSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BadasSwift-dummy.m"; sourceTree = "<group>"; };
+		01CD9C1BA66DD408AB9B53D291D8B4A4 /* NSLayoutConstraint+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Utils.swift"; path = "BadasSwift/Classes/NSLayoutConstraint+Utils.swift"; sourceTree = "<group>"; };
+		0D7E2E685A92F74BA1E95391F758DDAA /* BadasSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BadasSwift.modulemap; sourceTree = "<group>"; };
+		0E19AF8CB5490B58AA9D108AA76435CF /* BadasSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BadasSwift-umbrella.h"; sourceTree = "<group>"; };
+		0EEE548852057C9B12D5D464D3BECD1C /* BadasSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BadasSwift-Info.plist"; sourceTree = "<group>"; };
 		1427DD0302DA501BFF0E846F8D2BF5CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		1953C03B6B7501363EE7C4CA3FD5CB6A /* BadasSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BadasSwift-umbrella.h"; sourceTree = "<group>"; };
+		1847482A581E8FEA44D063E17FA8B3C6 /* VoteView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VoteView.h; path = BadasSwift/Classes/VoteView.h; sourceTree = "<group>"; };
+		26DB0F64E2103D19914703117391FFA6 /* BadasSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BadasSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		28532A6402F0DE0FD1D00B0C7871511D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		2B63CA53A8D9F158824CC806B826D5E8 /* Pods-BadasSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BadasSwift_Example.modulemap"; sourceTree = "<group>"; };
+		2EBD6437653ECFD80C8441BDB94FDBD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		38A669DFFCB2FEE3B92E861B5962E379 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		39E07EFAFF80B7297961438E68923BFF /* UIImage+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Utils.swift"; path = "BadasSwift/Classes/UIImage+Utils.swift"; sourceTree = "<group>"; };
 		3A3D1A093E907F24FC4CE21543C74AFC /* Pods-BadasSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BadasSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		41AC6CE252DF728A66C7C5E948763022 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utils.swift"; path = "BadasSwift/Classes/UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		42781CD387A97C4B7CB19FF62A6DBF17 /* Pods-BadasSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BadasSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		44E4136C29F695EEDEFB129884E7645C /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Utils.swift"; path = "BadasSwift/Classes/UIView+Utils.swift"; sourceTree = "<group>"; };
 		44F911C45D4578CB09E4FBB51AB3B848 /* Pods-BadasSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BadasSwift_Tests-Info.plist"; sourceTree = "<group>"; };
 		501B3734A1E85C7B7BF481802BCFC3B3 /* Pods-BadasSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BadasSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		520613A6039AF890209ABEF4EC381D88 /* String+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Utils.swift"; path = "BadasSwift/Classes/String+Utils.swift"; sourceTree = "<group>"; };
+		5C89C9B191E9135E1D3B8BE167176377 /* BadasSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BadasSwift.xcconfig; sourceTree = "<group>"; };
+		5DEF6CACAD51D8173A58A02A2D88677A /* UIImageView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Utils.swift"; path = "BadasSwift/Classes/UIImageView+Utils.swift"; sourceTree = "<group>"; };
 		601B5205701BAF61745BBAF892E7468D /* Pods-BadasSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BadasSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4089FC4D9278C03D7E58E4D62FDF5C /* Pods-BadasSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BadasSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		70C54484A80D09386CDFE52B507D660C /* Pods-BadasSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BadasSwift_Example-Info.plist"; sourceTree = "<group>"; };
 		73D77B86F085DE3521682DC34D03BE4F /* Pods-BadasSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BadasSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		75FD2E128B81E48588C89251CDD819D9 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utils.swift"; path = "BadasSwift/Classes/UIViewController+Utils.swift"; sourceTree = "<group>"; };
-		76C1C01D76EA691FC4BB66741DCC66A7 /* BadasSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BadasSwift.modulemap; sourceTree = "<group>"; };
+		7CDDBD85A2FE4EA7E4D8591C242D7C7D /* BadasSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BadasSwift-prefix.pch"; sourceTree = "<group>"; };
 		8AE03D04DBC8D359806CCF8078CB3365 /* Pods-BadasSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BadasSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8FD1F6E8EB6C3A71E4E71C2D23350969 /* Pods_BadasSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BadasSwift_Example.framework; path = "Pods-BadasSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92765538FA82AA6237712C569F1FAA96 /* Pods-BadasSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BadasSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		960FC16B48899B6769BFFCFE572F0FF9 /* Pods-BadasSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BadasSwift_Example-umbrella.h"; sourceTree = "<group>"; };
-		9A0E745FBF11481AC663D15CFFE09482 /* BadasSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BadasSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A6A0B246428A0A6BFE09DC68D3ABA81 /* BadasSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BadasSwift-Info.plist"; sourceTree = "<group>"; };
-		A756F94D401F0ABBECDFCB737A60D316 /* BadasSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BadasSwift-prefix.pch"; sourceTree = "<group>"; };
 		AB67A6AC2290FE36970BECC5D74058D4 /* BadasSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BadasSwift.framework; path = BadasSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB8A2A4EAC3456BFC67043D4D25F99B /* Pods_BadasSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BadasSwift_Tests.framework; path = "Pods-BadasSwift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B59B5F8A9ECB581C6425BB34AF742726 /* BadasSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BadasSwift.xcconfig; sourceTree = "<group>"; };
 		BAEB1A0EB0A6E75FA69B69F3FD071EBB /* Pods-BadasSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BadasSwift_Tests.modulemap"; sourceTree = "<group>"; };
-		C1CC51ACC9DB83078912A6CE29FDC248 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CC39186336D677DDD08B26914D994CFA /* BadasSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BadasSwift-dummy.m"; sourceTree = "<group>"; };
 		CCDEFCC79662AFADDBA750D2A2A570E1 /* Pods-BadasSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BadasSwift_Example-dummy.m"; sourceTree = "<group>"; };
 		CD45D6C921AF22FB2D21449690FEB93A /* Pods-BadasSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BadasSwift_Tests-dummy.m"; sourceTree = "<group>"; };
-		CE5F70A19377C4776612953FAA84852C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		DC9081EF7C18685D6CA46756D0252625 /* Pods-BadasSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BadasSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F6733676048AD5E06BA151BF5420477E /* Pods-BadasSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BadasSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FC238B105929CA66A19E1DE29F70E58F /* UIImage+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Utils.swift"; path = "BadasSwift/Classes/UIImage+Utils.swift"; sourceTree = "<group>"; };
+		F96FC7EDA2032C3ABF297ADCA4A0061B /* VoteView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VoteView.m; path = BadasSwift/Classes/VoteView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,21 +98,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CD21FAC9B101D28B41155E6568E2F37 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC3D6CAECBA2592D9052E898D94FF4A6 /* Foundation.framework in Frameworks */,
-				8CAC228DD54DCA88C65CF7E826860AB9 /* MapKit.framework in Frameworks */,
-				35C51894F578943CE567672357C74B46 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AA87DD3EFDAF6F5F83A975E5C4050E75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6E71FEFD1F7E363DDBA9DCB3FED500F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8F03E7EC149D387FD59AC789CE727E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57554215B7B7AEF813875E5F93A6AB6E /* Foundation.framework in Frameworks */,
+				B1335F755AB3348C1E199419B58259DF /* MapKit.framework in Frameworks */,
+				E3A02AA77B15416E5A225EED5AE86685 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,28 +127,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2FF93AEC48FC37A06E9658291374CFD5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				76C1C01D76EA691FC4BB66741DCC66A7 /* BadasSwift.modulemap */,
-				B59B5F8A9ECB581C6425BB34AF742726 /* BadasSwift.xcconfig */,
-				081D84F5F7118EAC4E9EC3B28920E26F /* BadasSwift-dummy.m */,
-				9A6A0B246428A0A6BFE09DC68D3ABA81 /* BadasSwift-Info.plist */,
-				A756F94D401F0ABBECDFCB737A60D316 /* BadasSwift-prefix.pch */,
-				1953C03B6B7501363EE7C4CA3FD5CB6A /* BadasSwift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BadasSwift";
-			sourceTree = "<group>";
-		};
-		4BD6944E0B42F40FEE4006B05BC86537 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F80F176AFC406C4C377CADD279D05A00 /* BadasSwift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		5395C52BEA67E786EEF5898FE0DDAEA7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +135,16 @@
 				1427DD0302DA501BFF0E846F8D2BF5CD /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		6402AC8EE1E30AB28AF8CF82CA24B945 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				26DB0F64E2103D19914703117391FFA6 /* BadasSwift.podspec */,
+				38A669DFFCB2FEE3B92E861B5962E379 /* LICENSE */,
+				2EBD6437653ECFD80C8441BDB94FDBD9 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		6632BF06E371C7A5962F40E1FDDC9541 /* Products */ = {
@@ -157,15 +157,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6DB2FF36CC3C79E2CFE2CE36F1F7EEC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D7E2E685A92F74BA1E95391F758DDAA /* BadasSwift.modulemap */,
+				5C89C9B191E9135E1D3B8BE167176377 /* BadasSwift.xcconfig */,
+				CC39186336D677DDD08B26914D994CFA /* BadasSwift-dummy.m */,
+				0EEE548852057C9B12D5D464D3BECD1C /* BadasSwift-Info.plist */,
+				7CDDBD85A2FE4EA7E4D8591C242D7C7D /* BadasSwift-prefix.pch */,
+				0E19AF8CB5490B58AA9D108AA76435CF /* BadasSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BadasSwift";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				4BD6944E0B42F40FEE4006B05BC86537 /* Development Pods */,
+				A339E51B0E898ACBBA8F23A3911523C1 /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				6632BF06E371C7A5962F40E1FDDC9541 /* Products */,
 				AD159A7157E545E60E91F7E4753AA475 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		94B213E84D8325CB048DBB72FF5512D3 /* BadasSwift */ = {
+			isa = PBXGroup;
+			children = (
+				01CD9C1BA66DD408AB9B53D291D8B4A4 /* NSLayoutConstraint+Utils.swift */,
+				520613A6039AF890209ABEF4EC381D88 /* String+Utils.swift */,
+				39E07EFAFF80B7297961438E68923BFF /* UIImage+Utils.swift */,
+				5DEF6CACAD51D8173A58A02A2D88677A /* UIImageView+Utils.swift */,
+				44E4136C29F695EEDEFB129884E7645C /* UIView+Utils.swift */,
+				41AC6CE252DF728A66C7C5E948763022 /* UIViewController+Utils.swift */,
+				1847482A581E8FEA44D063E17FA8B3C6 /* VoteView.h */,
+				F96FC7EDA2032C3ABF297ADCA4A0061B /* VoteView.m */,
+				6402AC8EE1E30AB28AF8CF82CA24B945 /* Pod */,
+				6DB2FF36CC3C79E2CFE2CE36F1F7EEC1 /* Support Files */,
+			);
+			name = BadasSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A339E51B0E898ACBBA8F23A3911523C1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94B213E84D8325CB048DBB72FF5512D3 /* BadasSwift */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		AD159A7157E545E60E91F7E4753AA475 /* Targets Support Files */ = {
@@ -210,44 +250,23 @@
 			path = "Target Support Files/Pods-BadasSwift_Example";
 			sourceTree = "<group>";
 		};
-		E49329A7E28F45063D8FB930AA0E3AE0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9A0E745FBF11481AC663D15CFFE09482 /* BadasSwift.podspec */,
-				CE5F70A19377C4776612953FAA84852C /* LICENSE */,
-				C1CC51ACC9DB83078912A6CE29FDC248 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		F80F176AFC406C4C377CADD279D05A00 /* BadasSwift */ = {
-			isa = PBXGroup;
-			children = (
-				FC238B105929CA66A19E1DE29F70E58F /* UIImage+Utils.swift */,
-				75FD2E128B81E48588C89251CDD819D9 /* UIViewController+Utils.swift */,
-				E49329A7E28F45063D8FB930AA0E3AE0 /* Pod */,
-				2FF93AEC48FC37A06E9658291374CFD5 /* Support Files */,
-			);
-			name = BadasSwift;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		07C05617A464669C912359FD295C9446 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C640CE6454BD350E64737C0D0390B33D /* BadasSwift-umbrella.h in Headers */,
+				AE579F2FF72C073B98ABEB6530AF7E8E /* VoteView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B98BDCB8004C6D493B9F8190D213CFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F90BFC539969341D6FA9A6CFDC59367E /* Pods-BadasSwift_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C66DA3D9119B3ED8A23CF3E3FEEFBD6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				531EA42B4C165C6AA89D4D4A318F644E /* BadasSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +300,24 @@
 			productReference = ACB8A2A4EAC3456BFC67043D4D25F99B /* Pods_BadasSwift_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		303F795E8B3DDD19C247F96A679A353E /* BadasSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EE86B0BA2D2ED3B2905AC2A1AFAAFC7 /* Build configuration list for PBXNativeTarget "BadasSwift" */;
+			buildPhases = (
+				07C05617A464669C912359FD295C9446 /* Headers */,
+				43917CE8CB10876096B0E630E935D993 /* Sources */,
+				BD8F03E7EC149D387FD59AC789CE727E /* Frameworks */,
+				6A2709807B2B4AAD43002F428969CFFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BadasSwift;
+			productName = BadasSwift;
+			productReference = AB67A6AC2290FE36970BECC5D74058D4 /* BadasSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		91C93C2B7E906E4FB9CA6681CD34D2A3 /* Pods-BadasSwift_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD065B0DD9B8ED679C5BC936AB40FE1D /* Build configuration list for PBXNativeTarget "Pods-BadasSwift_Example" */;
@@ -298,24 +335,6 @@
 			name = "Pods-BadasSwift_Example";
 			productName = "Pods-BadasSwift_Example";
 			productReference = 8FD1F6E8EB6C3A71E4E71C2D23350969 /* Pods_BadasSwift_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CCF50C473F0102129F20315F5E47AD01 /* BadasSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3CCED53E66C388ACB2A4A80EAB0EFD17 /* Build configuration list for PBXNativeTarget "BadasSwift" */;
-			buildPhases = (
-				0C66DA3D9119B3ED8A23CF3E3FEEFBD6 /* Headers */,
-				B5D8890B8A4626744EDEB65EBDBC876B /* Sources */,
-				6CD21FAC9B101D28B41155E6568E2F37 /* Frameworks */,
-				3FAE350BDBC6FFD61100AAAED7477324 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BadasSwift;
-			productName = BadasSwift;
-			productReference = AB67A6AC2290FE36970BECC5D74058D4 /* BadasSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +358,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CCF50C473F0102129F20315F5E47AD01 /* BadasSwift */,
+				303F795E8B3DDD19C247F96A679A353E /* BadasSwift */,
 				91C93C2B7E906E4FB9CA6681CD34D2A3 /* Pods-BadasSwift_Example */,
 				04DBF72E075F4B385F613470DD06F185 /* Pods-BadasSwift_Tests */,
 			);
@@ -347,14 +366,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3FAE350BDBC6FFD61100AAAED7477324 /* Resources */ = {
+		42BC122D9C677DE215DB80DE375DDA86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42BC122D9C677DE215DB80DE375DDA86 /* Resources */ = {
+		6A2709807B2B4AAD43002F428969CFFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,21 +390,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		43917CE8CB10876096B0E630E935D993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E25CE47F0B6774442CF644B45F2409 /* BadasSwift-dummy.m in Sources */,
+				6644AE3D1AC92866D66B174D7902A3F1 /* NSLayoutConstraint+Utils.swift in Sources */,
+				53ABF231882862011AA6AFA66F1DDF43 /* String+Utils.swift in Sources */,
+				CF4FD235EF9A24834DDEE3B6E3825BD9 /* UIImage+Utils.swift in Sources */,
+				663D8E1BEFCA546064E75931FC2DD2A4 /* UIImageView+Utils.swift in Sources */,
+				68CD4DA1D24EE44BF387865FB2B6771C /* UIView+Utils.swift in Sources */,
+				7AA8E7E949CD2CA6ED826AA28CD1906F /* UIViewController+Utils.swift in Sources */,
+				2FB6F4C3B4E56E812C1806F04395D81D /* VoteView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55C28FD096597F6A5026F8273EC9F495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BCFD1A4C7FB4C6794FF13B5BC1D37B96 /* Pods-BadasSwift_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5D8890B8A4626744EDEB65EBDBC876B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E483AECB368FF4E3B925538C85DBF46 /* BadasSwift-dummy.m in Sources */,
-				415DE0C1727AB5ED40476AC253FD6330 /* UIImage+Utils.swift in Sources */,
-				2751CC351FE20473124C9CE0BC8FEF65 /* UIViewController+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +427,7 @@
 		06DB261D6018522A7BE6E94E0A5EA655 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BadasSwift;
-			target = CCF50C473F0102129F20315F5E47AD01 /* BadasSwift */;
+			target = 303F795E8B3DDD19C247F96A679A353E /* BadasSwift */;
 			targetProxy = 129C19B9180032C4AEC08296BF1D436E /* PBXContainerItemProxy */;
 		};
 		E04E73AC6E2472E7D8A5C48F670F4C31 /* PBXTargetDependency */ = {
@@ -415,9 +439,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		23A0B4B2E09BBEE881D60DA37ABA6494 /* Debug */ = {
+		33E4E2A83BFD394F7784001E067748AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B59B5F8A9ECB581C6425BB34AF742726 /* BadasSwift.xcconfig */;
+			baseConfigurationReference = 5C89C9B191E9135E1D3B8BE167176377 /* BadasSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -447,9 +471,9 @@
 			};
 			name = Debug;
 		};
-		2B56BC8188386CBF9151A66AFC91D0B9 /* Release */ = {
+		3EB1D0374D36847BA396756AE17AD909 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B59B5F8A9ECB581C6425BB34AF742726 /* BadasSwift.xcconfig */;
+			baseConfigurationReference = 5C89C9B191E9135E1D3B8BE167176377 /* BadasSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -754,11 +778,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CCED53E66C388ACB2A4A80EAB0EFD17 /* Build configuration list for PBXNativeTarget "BadasSwift" */ = {
+		7EE86B0BA2D2ED3B2905AC2A1AFAAFC7 /* Build configuration list for PBXNativeTarget "BadasSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A0B4B2E09BBEE881D60DA37ABA6494 /* Debug */,
-				2B56BC8188386CBF9151A66AFC91D0B9 /* Release */,
+				33E4E2A83BFD394F7784001E067748AD /* Debug */,
+				3EB1D0374D36847BA396756AE17AD909 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

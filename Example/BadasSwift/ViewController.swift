@@ -11,31 +11,43 @@ import BadasSwift
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var imgCenterY: NSLayoutConstraint!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setStatusBarColor(UIColor.red)
+        setStatusBarColor(UIColor.red)
         
-        if (img.image!.isEqualTo(UIImage(named: "1x1_sol_trottoire")!)) {
+        let str:String = "Hello World!"
+        print("String : '\(str)'")
+        print("MD5 Hex: \(str.MD5Hex())")
+        print("MD5 b64: \(str.MD5base64())")
+        print("-----------------------------\n")
+        
+        button.putBorders(color: UIColor.blue)
+        
+        if (imgView.image!.isEqualTo(UIImage(named: "digitick")!)) {
             print("Images are equals")
         }
         
-        let image = img.image!.convertToGrayScale()
-        img.image = image
+        let image = imgView.image!.convertToGrayScale()
+        imgView.image = image
         
-        UIImage.getImageWithURL(URL(string: "https://objectivec2swift.com/img/logo-text.png")!) { (img) in
+        imgView.setImageWithUrlString("https://objectivec2swift.com/img/logo-text.png") { (img) in
+            
             if (img != nil) {
-                self.img.image = img
+                self.imgCenterY.animateConstraintTo(-100, for: self.view, duration: 1, completion: {
+                    self.imgCenterY.animateConstraintTo(100.0, for: self.view, duration: 0.5)
+                })
             }
         }
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func btnAction(_ sender: UIButton) {
+        sender.rootView.removeAllSubviews()
     }
-
 }
 

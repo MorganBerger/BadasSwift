@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "VoteView.h"
 
 FOUNDATION_EXPORT double BadasSwiftVersionNumber;
 FOUNDATION_EXPORT const unsigned char BadasSwiftVersionString[];
