@@ -1,0 +1,6 @@
+framework module BadasSwift {
+  umbrella header "BadasSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

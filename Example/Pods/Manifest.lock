@@ -1,0 +1,16 @@
+PODS:
+  - BadasSwift (0.0.1)
+
+DEPENDENCIES:
+  - BadasSwift (from `../`)
+
+EXTERNAL SOURCES:
+  BadasSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BadasSwift: d8177fb5ac1cac205868c7bb74b3668c1e1da4c9
+
+PODFILE CHECKSUM: 4dea812628ee4a664ebcd200b68a03efd218942a
+
+COCOAPODS: 1.6.0.beta.1

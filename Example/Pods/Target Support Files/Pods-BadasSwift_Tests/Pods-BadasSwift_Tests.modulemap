@@ -1,0 +1,6 @@
+framework module Pods_BadasSwift_Tests {
+  umbrella header "Pods-BadasSwift_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

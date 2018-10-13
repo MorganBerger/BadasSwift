@@ -1,0 +1,12 @@
+use_frameworks!
+platform :ios, '9.3'
+
+target 'BadasSwift_Example' do
+  pod 'BadasSwift', :path => '../'
+
+  target 'BadasSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
