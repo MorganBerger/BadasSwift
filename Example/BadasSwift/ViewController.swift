@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         
         print("Location manager is authorized: \(CLLocationManager.isAuthorized)")
         
+        let _ = URL.verifyUrl(string:"www.google.com")
+        
         button.putBorders(color: UIColor.blue)
         
         if (imgView.image!.isEqualTo(UIImage(named: "digitick")!)) {

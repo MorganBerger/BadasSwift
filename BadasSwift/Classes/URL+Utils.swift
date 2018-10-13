@@ -5,9 +5,9 @@
 //  Created by Morgan Berger on 13/10/2018.
 //
 
-extension URL {
+public extension URL {
     
-    public func verifyUrl(string: String?) -> Bool {
+    static func verifyUrl(string: String?) -> Bool {
         //Check for nil
         if let urlString = string {
             // create NSURL instance
