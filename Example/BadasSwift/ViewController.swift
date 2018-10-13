@@ -6,7 +6,9 @@
 //  Copyright (c) 2018 morganberger. All rights reserved.
 //
 
+
 import UIKit
+import CoreLocation
 import BadasSwift
 
 class ViewController: UIViewController {
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
         print("MD5 Hex: \(str.MD5Hex())")
         print("MD5 b64: \(str.MD5base64())")
         print("-----------------------------\n")
+        
+        print("Location manager is authorized: \(CLLocationManager.isAuthorized)")
         
         button.putBorders(color: UIColor.blue)
         

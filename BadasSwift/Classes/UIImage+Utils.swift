@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UIImage {
+extension UIImage {
     
     // Turn an image black & white in one click!
     public func convertToGrayScale() -> UIImage {
@@ -26,7 +26,17 @@ public extension UIImage {
         return newImage
     }
     
+    func scaleImage(scaleToSize: CGSize) -> UIImage {
+        UIGraphicsBeginImageContext(scaleToSize)
+        
+        self.draw(in: CGRect(origin: CGPoint(x: 0, y: 0), size: scaleToSize))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
 
+    // Check if 2 images are identical.
     public func isEqualTo(_ image: UIImage) -> Bool {
         let data1: Data? = UIImagePNGRepresentation(self)
         let data2: Data? = UIImagePNGRepresentation(image)
