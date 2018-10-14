@@ -7,6 +7,17 @@
 
 import UIKit
 
-class Date_Utils: UICollectionViewFlowLayout {
-
+public extension Date {
+    
+    func formatedString(_ format:String) -> String {
+        
+        let formatter:DateFormatter = DateFormatter()
+        
+        formatter.timeZone = TimeZone.current
+        formatter.dateFormat = format
+        
+        let result = formatter.string(from: self)
+        
+        return result
+    }
 }

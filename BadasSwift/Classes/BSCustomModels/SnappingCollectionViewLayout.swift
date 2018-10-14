@@ -2,7 +2,7 @@
 //  SnappingCollectionViewLayout.swift
 //  BadasSwift
 //
-//  Created by Morgan Berger on 13/10/2018.
+//  Created by Morgan Berger on 21/06/2018.
 //
 
 import UIKit

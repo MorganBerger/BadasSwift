@@ -88,8 +88,6 @@ IB_DESIGNABLE
     
     int index = (int)sender.view.tag;
     
-    NSLog(@"tag : %ld", (long)sender.view.tag);
-    
     [self selectStarsToIndex:index];
     
     if (_voteResult != index + 1){

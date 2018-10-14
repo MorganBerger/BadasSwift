@@ -30,13 +30,17 @@ class ViewController: UIViewController {
         
         print("Location manager is authorized: \(CLLocationManager.isAuthorized)")
         
-        let _ = URL.verifyUrl(string:"www.google.com")
+        let _ = URL.verifyUrl(string:"http://www.google.com")
         
         button.putBorders(color: UIColor.blue)
         
         if (imgView.image!.isEqualTo(UIImage(named: "digitick")!)) {
             print("Images are equals")
         }
+        
+        let date = Date()
+        
+        print("Today's date is: \(date.formatedString("EEEE, MMM d, yyyy"))")
         
         let image = imgView.image!.convertToGrayScale()
         imgView.image = image
