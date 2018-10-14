@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BadasSwift'
   s.version          = '0.1.0'
-  s.summary          = 'A colourful library of Swift base classes extensions.'
+  s.summary          = 'A colourful library of Swift base classes extensions & customed stuff!'
   s.swift_version    = '4.0'
 
 # This description is used to generate tags and improve search results.
@@ -19,14 +19,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  A colourful library of Swift base classes extensions.
-  Including :
-  - NSLayoutConstraint
-  - NSNumber
-  - NSString
-  - UIView
-  - UIImage
-  - UIImageView
+  A colourful library of Swift base classes extensions & customed stuff!
+  -> Currently a work in progress. Lot of cleaning to do here!
                        DESC
 
   s.homepage         = 'https://github.com/morganberger/BadasSwift'
