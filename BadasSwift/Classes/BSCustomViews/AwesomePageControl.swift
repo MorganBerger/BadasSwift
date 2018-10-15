@@ -196,7 +196,6 @@ class AwesomePageControl: UIView {
                 buttons[i]?.setTitleColor(UIColor.white, for: .normal)
             }
         }
-        
     }
 
     //MARK: - IBAction methods
