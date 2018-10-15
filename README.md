@@ -54,16 +54,16 @@ pod 'BadasSwift'
 ### Extensions
 
 - #### Bundle:<br/>
-   Provides rapid access to app version & build numbers.
-   ```
-   public var versionNumber: String? { get }
-   public var buildVersionNumber: String? { get }
-   ```
-   Usage:
+  Provides rapid access to app version & build numbers.
+  ```
+  public var versionNumber: String? { get }
+  public var buildVersionNumber: String? { get }
+  ```
+  Usage:
    
-   `print("Version number: \(Bundle.main.versionNumber)")`\
-   **Output ->** _"Version number: 1.0"_
-   
+  `print("Version number: \(Bundle.main.versionNumber)")`\
+  **Output ->** _"Version number: 1.0"_
+  
 - #### CharacterSet:<br/>
    ```
    static let urlAllowed: CharacterSet
@@ -84,7 +84,7 @@ pod 'BadasSwift'
    ```
    `  print(urlStr)`\
    **Output ->** _"http://google.com/search?q=Hello%20there,%20have%20a%20good%20day."_
-   
+  
 - #### CLLocationManager:
   ```
   public static var isAuthorized: Bool { get }
@@ -169,10 +169,11 @@ pod 'BadasSwift'
   
 - #### UIView:
 
-  Get the root view in view hierarchy.\
-  `public var rootView: UIView { get }`
-  
-  
+  Get the root view in view hierarchy.
+  ```
+  public var rootView: UIView { get }
+  ```
+  \
   Animate any view alpha to **1.0f**. Can be called with or without completion block.
   ```
   public func showWithDuration(_ duration: Double)
@@ -183,20 +184,22 @@ pod 'BadasSwift'
   public func hideWithDuration(_ duration: Double)
   public func hideWithDuration(_ duration: Double, completion: @escaping () -> Void)
   ```
+  \
+  Put 1px width border to any view with the wanted color. Mostly use for debugging purposes.
+  ```
+  public func putBorders(color: UIColor)
+  ```
+  \
+  Adds a vertical gradient layer with wanted colors to any view.
+  ```
+  public func putGradient(_ colors: CGColor...)
+  ```
+  \
+  Basically turn a view to an UIImage.
+  ```
+  public func takeSnapshot() -> UIImage?
+  ```
   
-  
-  Put 1px width border to any view with the wanted color. Mostly use for debugging purposes.\
-  `public func putBorders(color: UIColor)`
-  
-  
-  Adds a vertical gradient layer with wanted colors to any view.\
-  `public func putGradient(_ colors: CGColor...)`
-  
-  
-  Basically turn a view to an UIImage.\
-  `public func takeSnapshot() -> UIImage?`
-
-
 - #### UIViewController:
   ```
   public func setStatusBarColor(_ color: UIColor)
@@ -226,6 +229,7 @@ pod 'BadasSwift'
 - #### VoteView:
   ```
   ```
+  
 - #### AwesomePageControl:
   ```
   ```
