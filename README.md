@@ -7,12 +7,27 @@
 
 ## Description
 
-A colourful library of Swift base classes extensions & customed stuff!
-[English](#english)
+A colourful library of Swift extensions & custom stuffs!
+
+Documentation:
+- [Extensions](#extensions)
+  - [UIView](#uiview)
+- Models
+  - SnappingCollectionViewFlowLayout
+- Views
+  - VoteView
+  - AwesomePageControl
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+- iOS 9.3+
+- Xcode 9.4+
+- Swift 4.0+
 
 ## Installation
 
@@ -23,6 +38,19 @@ it, simply add the following line to your Podfile:
 pod 'BadasSwift'
 ```
 
+## Documentation
+
+### Extensions
+
+- #### UIView:
+```
+public func removeAllSubviews()
+public func showWithDuration(_ duration: Double)
+public func hideWithDuration(_ duration: Double)
+public func showWithDuration(_ duration: Double, completion: @escaping () -> Void)
+public func hideWithDuration(_ duration: Double, completion: @escaping () -> Void)
+```
+
 ## Author
 
 morganberger, morgan.berger71@gmail.com
@@ -30,5 +58,3 @@ morganberger, morgan.berger71@gmail.com
 ## License
 
 BadasSwift is available under the MIT license. See the LICENSE file for more info.
-
-# English
