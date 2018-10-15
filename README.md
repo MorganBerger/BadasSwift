@@ -169,10 +169,9 @@ pod 'BadasSwift'
   
 - #### UIView:
 
-  Get the root view in view hierarchy.
-  ```
-  public var rootView: UIView { get }
-  ```
+  Get the root view in view hierarchy.\
+  `public var rootView: UIView { get }`
+  
   
   Animate any view alpha to **1.0f**. Can be called with or without completion block.
   ```
@@ -185,20 +184,18 @@ pod 'BadasSwift'
   public func hideWithDuration(_ duration: Double, completion: @escaping () -> Void)
   ```
   
-  Put 1px width border to any view with the wanted color. Mostly use for debugging purposes.
-  ```
-  public func putBorders(color: UIColor)
-  ```
   
-  Adds a vertical gradient layer with wanted colors to any view.
-  ```
-  public func putGradient(_ colors: CGColor...)
-  ```
+  Put 1px width border to any view with the wanted color. Mostly use for debugging purposes.\
+  `public func putBorders(color: UIColor)`
   
-  Basically turn a view to an UIImage.
-  ```
-  public func takeSnapshot() -> UIImage?
-  ```
+  
+  Adds a vertical gradient layer with wanted colors to any view.\
+  `public func putGradient(_ colors: CGColor...)`
+  
+  
+  Basically turn a view to an UIImage.\
+  `public func takeSnapshot() -> UIImage?`
+
 
 - #### UIViewController:
   ```
