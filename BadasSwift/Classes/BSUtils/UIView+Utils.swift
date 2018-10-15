@@ -52,6 +52,7 @@ public extension UIView {
         
         gradient.frame = self.bounds
         gradient.colors = colors;
+//        gradient.locations
         
         self.layer.insertSublayer(gradient, at: 0)
     }
