@@ -241,7 +241,9 @@ pod 'BadasSwift'
   ```
   
   Result:
-  -> gif goes here
+  
+  <img src=".readme_assets/snappingCells.gif" width="400">
+
 
 ### Views
 - #### VoteView:
