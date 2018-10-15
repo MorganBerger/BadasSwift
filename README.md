@@ -55,17 +55,19 @@ pod 'BadasSwift'
 
 - #### Bundle:<br/>
   Provides rapid access to app version & build numbers.
-  ```
+  ```Swift
   public var versionNumber: String? { get }
   public var buildVersionNumber: String? { get }
   ```
   Usage:
    
-  `print("Version number: \(Bundle.main.versionNumber)")`\
+  ```Swift
+  print("Version number: \(Bundle.main.versionNumber)")
+  ```
   **Output ->** _"Version number: 1.0"_
   
 - #### CharacterSet:<br/>
-   ```
+   ```Swift
    static let urlAllowed: CharacterSet
    ```
    The *urlAllowed* variable is a CharacterSet union between:
@@ -78,15 +80,15 @@ pod 'BadasSwift'
    It allows quick conversion from any string to a formatted acceptable url string.
    
    Usage:
-   ```
+   ```Swift
    var urlStr = "http://google.com/search?q=Hello there, have a good day."
    urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlAllowed)!
+   print(urlStr)
    ```
-   `  print(urlStr)`\
    **Output ->** _"http://google.com/search?q=Hello%20there,%20have%20a%20good%20day."_
   
 - #### CLLocationManager:
-  ```
+  ```Swift
   public static var isAuthorized: Bool { get }
   ```
   Returns **true** if user authorized location _always_ or _whenInUse_
@@ -94,17 +96,20 @@ pod 'BadasSwift'
 - #### Date:
 
   Returns a date string with asked format.
-  ```
+  ```Swift
   public func formatedString(_ format: String) -> String
   ```
   
-  `print("Today's date is: \(Date().formatedString("EEEE, MMM d, yyyy"))")`\
+  Usage:
+  ```Swift
+  print("Today's date is: \(Date().formatedString("EEEE, MMM d, yyyy"))")
+  ```
   **Output ->** _"Today's date is Monday, Oct 11, 2018"_
   
 - #### NSLayoutConstraint:
 
   Provides some sweet real-time animation methods for NSLayoutConstraint.
-  ```
+  ```Swift
   public func animateConstraintTo(_ value: CGFloat, for view: UIView, duration: Double)
   public func animateConstraintTo(_ value: CGFloat, for view: UIView, duration: Double, completion: @escaping () -> Void)
   
@@ -114,54 +119,54 @@ pod 'BadasSwift'
 - #### String:
   
   Got a string full of HTML tags? Change it to a attributed string with the methods below.
-  ```
+  ```Swift
   public var html2AttributedString: NSAttributedString? { get }
   public var html2String: String { get }
   ```
   
   Usage:
-  ```
+  ```Swift
   let htmlStr = "<h1>Very Big Title</h1>"
   let attributedStr = htmlStr.html2AttributedString()
   ```
   
   Or you could smoothly hash any string to MD5 if you feel like it!
-  ```
+  ```Swift
   public func MD5Hex() -> String
   public func MD5base64() -> String
   ```
   
 - #### UIButton:
-  ```
+  ```Swift
   func alignTextHorizontal(spacing: CGFloat = default)
   ```
   
 - #### UIImage:
 
   Convert image to black & white (grayscale).
-  ```
+  ```Swift
   public func convertToGrayScale() -> UIImage
   ```
   
   Check is two images are identicals.
-  ```
+  ```Swift
   public func isEqualTo(_ image: UIImage) -> Bool
   ```
   
   Scale any image to the provided CGSize.
-  ```
+  ```Swift
   func scaleImage(scaleToSize: CGSize) -> UIImage
   ```
   
 - #### UIImageView:
 
   Fetches any web image from its url and applies it to the image view. Fast & async!
-  ```
+  ```Swift
   public func setImageWithUrlString(_ urlStr: String, completion: @escaping (_ img: UIImage?) -> Void)
   ```
   
   Usage:
-  ```
+  ```Swift
   anyImageView.setImageWithUrlString("http://something.com/someImage.png") { (img) in
       //the completion block send back the UIImage object that has been fetched.
   }
@@ -170,44 +175,44 @@ pod 'BadasSwift'
 - #### UIView:
 
   Get the root view in view hierarchy.
-  ```
+  ```Swift
   public var rootView: UIView { get }
   ```
   \
   Animate any view alpha to **1.0f**. Can be called with or without completion block.
-  ```
+  ```Swift
   public func showWithDuration(_ duration: Double)
   public func showWithDuration(_ duration: Double, completion: @escaping () -> Void)
   ```
   Animate any view alpha to **0.0f**. Can be called with or without completion block.
-  ```
+  ```Swift
   public func hideWithDuration(_ duration: Double)
   public func hideWithDuration(_ duration: Double, completion: @escaping () -> Void)
   ```
   \
   Put 1px width border to any view with the wanted color. Mostly use for debugging purposes.
-  ```
+  ```Swift
   public func putBorders(color: UIColor)
   ```
   \
   Adds a vertical gradient layer with wanted colors to any view.
-  ```
+  ```Swift
   public func putGradient(_ colors: CGColor...)
   ```
   \
   Basically turn a view to an UIImage.
-  ```
+  ```Swift
   public func takeSnapshot() -> UIImage?
   ```
   
 - #### UIViewController:
-  ```
+  ```Swift
   public func setStatusBarColor(_ color: UIColor)
   ```
   Easily change the status bar color from any view controller!
   
   Usage:
-  ```
+  ```Swift
   override func viewDidLoad() {
       super.viewDidLoad()
       self.setStatusBarColor(UIColor.blue)
@@ -215,23 +220,36 @@ pod 'BadasSwift'
   ```
   
 - #### URL:
-  ```
+  ```Swift
   public static func verifyUrl(string: String?) -> Bool
   ```
   Return **_true_** if url is correct/reachable. Else **_false_**.
 
 ### Models
 - #### SnappingCollectionViewLayout:
+  This class is a child of **UICollectionViewFlowLayout**.
+  It provides simple snapping for collection view cells.
+  
+  Usage:
+  ```Swift
+  let snapLayout:SnappingCollectionViewLayout = SnappingCollectionViewLayout()
+  snapLayout.scrollDirection = .horizontal
+  // Optional, you can ajust inset to better match your cells size.
+  snapLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 20)
+  
+  anyCollectionView.collectionViewLayout = snapLayout
   ```
-  ```
+  
+  Result:
+  -> gif goes here
 
 ### Views
 - #### VoteView:
-  ```
+  ```Swift
   ```
   
 - #### AwesomePageControl:
-  ```
+  ```Swift
   ```
 
 ## Author
