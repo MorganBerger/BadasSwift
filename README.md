@@ -1,6 +1,6 @@
 # BadasSwift
 
-[![CI Status](https://img.shields.io/travis/morganberger/BadasSwift.svg?style=flat?branch=master)](https://travis-ci.org/morganberger/BadasSwift)
+[![CI Status](https://img.shields.io/travis/MorganBerger/BadasSwift.svg?style=flat&branch=master)](https://travis-ci.org/MorganBerger/BadasSwift)
 [![Version](https://img.shields.io/cocoapods/v/BadasSwift.svg?style=flat)](https://cocoapods.org/pods/BadasSwift)
 [![License](https://img.shields.io/cocoapods/l/BadasSwift.svg?style=flat)](https://cocoapods.org/pods/BadasSwift)
 [![Platform](https://img.shields.io/cocoapods/p/BadasSwift.svg?style=flat)](https://cocoapods.org/pods/BadasSwift)
