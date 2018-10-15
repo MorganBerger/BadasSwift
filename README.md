@@ -33,6 +33,7 @@ A colourful library of Swift extensions & custom stuffs!
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+> Note that the example project is currently a work in progress. I only use to test the stuff I code so it might be a little messy for now.
 
 ## Requirements
 
