@@ -9,7 +9,7 @@
 
 A colourful library of Swift extensions & custom stuffs!
 
-Documentation:
+[Documentation](#documentation):
 1. [Extensions](#extensions)
    - [Bundle](#bundle)
    - [CharacterSet](#characterset)
@@ -92,22 +92,24 @@ pod 'BadasSwift'
   Returns **true** if user authorized location _always_ or _whenInUse_
   
 - #### Date:
+
+  Returns a date string with asked format.
   ```
   public func formatedString(_ format: String) -> String
   ```
-  Returns a date string with asked format.
   
   `print("Today's date is: \(Date().formatedString("EEEE, MMM d, yyyy"))")`\
   **Output ->** _"Today's date is Monday, Oct 11, 2018"_
   
 - #### NSLayoutConstraint:
+
+  Provides some sweet real-time animation methods for NSLayoutConstraint.
   ```
   public func animateConstraintTo(_ value: CGFloat, for view: UIView, duration: Double)
   public func animateConstraintTo(_ value: CGFloat, for view: UIView, duration: Double, completion: @escaping () -> Void)
   
   public func setMultiplier(multiplier: CGFloat) -> NSLayoutConstraint
   ```
-  Provides some sweet real-time animation methods for NSLayoutConstraint.
   
 - #### String:
   
@@ -135,26 +137,28 @@ pod 'BadasSwift'
   ```
   
 - #### UIImage:
+
+  Convert image to black & white (grayscale).
   ```
   public func convertToGrayScale() -> UIImage
   ```
-  Convert image to black & white (grayscale).
   
+  Check is two images are identicals.
   ```
   public func isEqualTo(_ image: UIImage) -> Bool
   ```
-  Check is two images are identicals.
   
+  Scale any image to the provided CGSize.
   ```
   func scaleImage(scaleToSize: CGSize) -> UIImage
   ```
-  Scale any image to the provided CGSize.
   
 - #### UIImageView:
+
+  Fetches any web image from its url and applies it to the image view. Fast & async!
   ```
   public func setImageWithUrlString(_ urlStr: String, completion: @escaping (_ img: UIImage?) -> Void)
   ```
-  Fetches any web image from its url and applies it to the image view. Fast & async!
   
   Usage:
   ```
@@ -164,39 +168,37 @@ pod 'BadasSwift'
   ```
   
 - #### UIView:
+
+  Get the root view in view hierarchy.
   ```
   public var rootView: UIView { get }
   ```
-  Get the root view in view hierarchy.
-    
-    
   
+  Animate any view alpha to **1.0f**. Can be called with or without completion block.
   ```
   public func showWithDuration(_ duration: Double)
   public func showWithDuration(_ duration: Double, completion: @escaping () -> Void)
   ```
-  Animate any view alpha to **1.0f**. Can be called with or without completion block.
-  
+  Animate any view alpha to **0.0f**. Can be called with or without completion block.
   ```
   public func hideWithDuration(_ duration: Double)
   public func hideWithDuration(_ duration: Double, completion: @escaping () -> Void)
   ```
-  Animate any view alpha to **0.0f**. Can be called with or without completion block.
   
+  Put 1px width border to any view with the wanted color. Mostly use for debugging purposes.
   ```
   public func putBorders(color: UIColor)
   ```
-  Put 1px width border to any view with the wanted color. Mostly use for debugging views.
   
+  Adds a vertical gradient layer with wanted colors to any view.
   ```
   public func putGradient(_ colors: CGColor...)
   ```
-  Adds a vertical gradient layer with wanted colors to any view.
   
+  Basically turn a view to an UIImage.
   ```
   public func takeSnapshot() -> UIImage?
   ```
-  Basically turn a view to UIImage.
 
 - #### UIViewController:
   ```
