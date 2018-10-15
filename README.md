@@ -274,8 +274,8 @@ pod 'BadasSwift'
 
   <img src=".readme_assets/awesomePageControl.gif" width="200">
   
-  It's still a work in progress so you'll probably have a **BAD TIME** trying to add more segments to it.<br/>
-  -> IBDesignable version coming soon.
+  You can use it as is but at this day it's a work in progress so you'll probably have a **BAD TIME** trying to add more segments to it.<br/>
+  -> IBDesignable version coming very soon.
   
   Anyway, it has only one delegate method, which is:
   ```Swift
