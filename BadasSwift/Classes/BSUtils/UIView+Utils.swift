@@ -44,7 +44,16 @@ public extension UIView {
     func putBorders(color:UIColor) {
         self.layer.borderWidth = 1.0
         self.layer.borderColor = color.cgColor
+    }
+    
+    func putGradient(_ colors:CGColor...) {
         
+        let gradient:CAGradientLayer = CAGradientLayer()
+        
+        gradient.frame = self.bounds
+        gradient.colors = colors;
+        
+        self.layer.insertSublayer(gradient, at: 0)
     }
     
     var rootView:UIView {

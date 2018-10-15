@@ -99,14 +99,13 @@ IB_DESIGNABLE
 - (void)selectStarsToIndex:(int)index {
     
     for (int i = 0; i < _imageViews.count; i++) {
+                
         [_imageViews[i] setImage:(i <= index ? self.imgSelected : self.imgUnselected)];
     }
 }
 
 - (void)setNote:(int)note {
-//    if (note != 0) {
-        [self selectStarsToIndex:note - 1];
-//    }
+    [self selectStarsToIndex:note - 1];
 }
 
 //#pragma mark - VoteViewDelegate methods // another day maybe

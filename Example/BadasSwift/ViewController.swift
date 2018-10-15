@@ -16,11 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var imgCenterY: NSLayoutConstraint!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var voteView: VoteView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setStatusBarColor(UIColor.red)
+        
+        let color1 = UIColor(red: 167/255, green: 200/255, blue: 255/255, alpha: 1).cgColor
+        let color2 = UIColor(red: 99/255, green: 153/255, blue: 242/255, alpha: 1).cgColor
+        
+        self.view.putGradient(color1, color2)//, color3)
         
         let str:String = "Hello World!"
         print("String : '\(str)'")
@@ -56,6 +62,7 @@ class ViewController: UIViewController {
         
     }
 
+    //MARK: - IBActions methods
     @IBAction func btnAction(_ sender: UIButton) {
         sender.rootView.removeAllSubviews()
     }

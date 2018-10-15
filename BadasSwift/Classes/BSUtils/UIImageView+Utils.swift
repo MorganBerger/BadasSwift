@@ -21,26 +21,4 @@ public extension UIImageView {
             })
         }
     }
-    
-//    - (void)setImageWithWebUrl:(NSString*)url completion:(void(^)(UIImage *img))completion {
-//
-//    NSURL *imgUrl = [NSURL URLWithString:url];
-//
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//
-//    [UIImage getImageWithURL:imgUrl completion:^(UIImage *img) {
-//
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//
-//    [self setImage:img];
-//
-//    NSLog(@"%@ loaded", url);
-//
-//    if (completion) completion(self.image);
-//    });
-//
-//    }];
-//    });
-//    }
-
 }
