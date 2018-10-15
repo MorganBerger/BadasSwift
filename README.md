@@ -247,12 +247,40 @@ pod 'BadasSwift'
 
 ### Views
 - #### VoteView:
+  Very simple Objective-C coded view created to make some users rate some stuff. Could be anything.<br/>
+  
+  <img src=".readme_assets/voteView.gif" width="200">
+  
+  You can easily subclass this IBDesignable view and make it your own.<br/>
+  It implements a few delegates: 
   ```Swift
+  - (UIImage*)setSelectedImgName;
+  - (UIImage*)setUnselectedImgName;
+  - (int)setImageNumber;
   ```
+  Those three are called during the `draw(_ rect:CGRect)` method. It depends of the developper's preferences to set the UIImages and images number directly in the Storyboard or to call those delegates to set them. They're like a lot of things in life: _optional_.
+  
+  ```Swift
+  - (void)voteDidChange:(int)voteResult;
+  ```
+  This one is called everytime a user taps an image within the view. Whenever the vote changes.
+  
   
 - #### AwesomePageControl:
+  A custom segmented control coded to be similar to the one used in the new version of the Chrome mobile app.<br/>
+  
+  Look how beautiful it is!
+
+  <img src=".readme_assets/awesomePageControl.gif" width="200">
+  
+  It's still a work in progress so you'll probably have a **BAD TIME** trying to add more segments to it.<br/>
+  -> IBDesignable version coming soon.
+  
+  Anyway, it has only one delegate method, which is:
   ```Swift
+  @objc optional func didTapControlAtIndex(_ index:Int) -> Void
   ```
+  called everytime a new 'segment' is selected.
 
 ## Author
 
