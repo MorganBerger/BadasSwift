@@ -18,7 +18,6 @@ Documentation:
    - [NSLayoutConstraint](#nslayoutconstraint)
    - [String](#string)
    - [UIButton](#uibutton)
-   - [UIDevice](#uidevice)
    - [UIImage](#uiimage)
    - [UIImageView](#uiimageview)
    - [UIView](#uiview)
@@ -54,83 +53,181 @@ pod 'BadasSwift'
 
 ### Extensions
 
-- #### Bundle
-  ```
-  public var versionNumber: String? { get }
-  public var buildVersionNumber: String? { get }
-  ```
-- #### CharacterSet
-  ```
-  internal static let urlAllowed: CharacterSet
-  ```
-- #### CLLocationManager
+- #### Bundle:<br/>
+   Provides rapid access to app version & build numbers.
+   ```
+   public var versionNumber: String? { get }
+   public var buildVersionNumber: String? { get }
+   ```
+   Usage:
+   
+   `print("Version number: \(Bundle.main.versionNumber)")`\
+   **Output ->** _"Version number: 1.0"_
+   
+- #### CharacterSet:<br/>
+   ```
+   static let urlAllowed: CharacterSet
+   ```
+   The *urlAllowed* variable is a CharacterSet union between:
+   - .urlFragmentAllowed
+   - .urlHostAllowed
+   - .urlPasswordAllowed
+   - .urlQueryAllowed
+   - .urlUserAllowed
+   
+   It allows quick conversion from any string to a formatted acceptable url string.
+   
+   Usage:
+   ```
+   var urlStr = "http://google.com/search?q=Hello there, have a good day."
+   urlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlAllowed)!
+   ```
+   `  print(urlStr)`\
+   **Output ->** _"http://google.com/search?q=Hello%20there,%20have%20a%20good%20day."_
+   
+- #### CLLocationManager:
   ```
   public static var isAuthorized: Bool { get }
   ```
-- #### Date
+  Returns **true** if user authorized location _always_ or _whenInUse_
+  
+- #### Date:
   ```
   public func formatedString(_ format: String) -> String
   ```
-- #### NSLayoutConstraint
+  Returns a date string with asked format.
+  
+  `print("Today's date is: \(Date().formatedString("EEEE, MMM d, yyyy"))")`\
+  **Output ->** _"Today's date is Monday, Oct 11, 2018"_
+  
+- #### NSLayoutConstraint:
   ```
   public func animateConstraintTo(_ value: CGFloat, for view: UIView, duration: Double)
   public func animateConstraintTo(_ value: CGFloat, for view: UIView, duration: Double, completion: @escaping () -> Void)
+  
   public func setMultiplier(multiplier: CGFloat) -> NSLayoutConstraint
   ```
-- #### String
+  Provides some sweet real-time animation methods for NSLayoutConstraint.
+  
+- #### String:
+  
+  Got a string full of HTML tags? Change it to a attributed string with the methods below.
   ```
   public var html2AttributedString: NSAttributedString? { get }
   public var html2String: String { get }
-  public func MD5Data() -> Data
+  ```
+  
+  Usage:
+  ```
+  let htmlStr = "<h1>Very Big Title</h1>"
+  let attributedStr = htmlStr.html2AttributedString()
+  ```
+  
+  Or you could smoothly hash any string to MD5 if you feel like it!
+  ```
   public func MD5Hex() -> String
   public func MD5base64() -> String
   ```
-- #### UIButton
+  
+- #### UIButton:
   ```
-  internal func alignTextHorizontal(spacing: CGFloat = default)
+  func alignTextHorizontal(spacing: CGFloat = default)
   ```
-- #### UIDevice
-  ```
-  public var modelName: String { get }
-  ```
-- #### UIImage
+  
+- #### UIImage:
   ```
   public func convertToGrayScale() -> UIImage
-  internal func scaleImage(scaleToSize: CGSize) -> UIImage
-  public func isEqualTo(_ image: UIImage) -> Bool
-  public class func getImageWithURL(_ url: URL, completion: @escaping (_ img: UIImage?) -> Void)
   ```
-- #### UIImageView
+  Convert image to black & white (grayscale).
+  
+  ```
+  public func isEqualTo(_ image: UIImage) -> Bool
+  ```
+  Check is two images are identicals.
+  
+  ```
+  func scaleImage(scaleToSize: CGSize) -> UIImage
+  ```
+  Scale any image to the provided CGSize.
+  
+- #### UIImageView:
   ```
   public func setImageWithUrlString(_ urlStr: String, completion: @escaping (_ img: UIImage?) -> Void)
   ```
+  Fetches any web image from its url and applies it to the image view. Fast & async!
+  
+  Usage:
+  ```
+  anyImageView.setImageWithUrlString("http://something.com/someImage.png") { (img) in
+      //the completion block send back the UIImage object that has been fetched.
+  }
+  ```
+  
 - #### UIView:
   ```
-  public func removeAllSubviews()
+  public var rootView: UIView { get }
+  ```
+  Get the root view in view hierarchy.
+    
+    
+  
+  ```
   public func showWithDuration(_ duration: Double)
-  public func hideWithDuration(_ duration: Double)
   public func showWithDuration(_ duration: Double, completion: @escaping () -> Void)
+  ```
+  Animate any view alpha to **1.0f**. Can be called with or without completion block.
+  
+  ```
+  public func hideWithDuration(_ duration: Double)
   public func hideWithDuration(_ duration: Double, completion: @escaping () -> Void)
   ```
-- #### UIViewController
+  Animate any view alpha to **0.0f**. Can be called with or without completion block.
+  
+  ```
+  public func putBorders(color: UIColor)
+  ```
+  Put 1px width border to any view with the wanted color. Mostly use for debugging views.
+  
+  ```
+  public func putGradient(_ colors: CGColor...)
+  ```
+  Adds a vertical gradient layer with wanted colors to any view.
+  
+  ```
+  public func takeSnapshot() -> UIImage?
+  ```
+  Basically turn a view to UIImage.
+
+- #### UIViewController:
   ```
   public func setStatusBarColor(_ color: UIColor)
   ```
-- #### URL
+  Easily change the status bar color from any view controller!
+  
+  Usage:
+  ```
+  override func viewDidLoad() {
+      super.viewDidLoad()
+      self.setStatusBarColor(UIColor.blue)
+  }
+  ```
+  
+- #### URL:
   ```
   public static func verifyUrl(string: String?) -> Bool
   ```
+  Return **_true_** if url is correct/reachable. Else **_false_**.
 
 ### Models
-- #### SnappingCollectionViewLayout
+- #### SnappingCollectionViewLayout:
   ```
   ```
 
 ### Views
-- #### VoteView
+- #### VoteView:
   ```
   ```
-- #### AwesomePageControl
+- #### AwesomePageControl:
   ```
   ```
 
