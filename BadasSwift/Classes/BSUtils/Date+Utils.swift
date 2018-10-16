@@ -9,6 +9,16 @@ import UIKit
 
 public extension Date {
     
+    init(dateString:String) {
+        
+        let dateStringFormatter = DateFormatter()
+        dateStringFormatter.dateFormat = "dd-MM-yyyy"
+        dateStringFormatter.locale = Locale(identifier: "en_US_POSIX")
+        
+        let d = dateStringFormatter.date(from: dateString)!
+        self.init(timeInterval:0, since:d)
+    }
+    
     func formatedString(_ format:String) -> String {
         
         let formatter:DateFormatter = DateFormatter()
