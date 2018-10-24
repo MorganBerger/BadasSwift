@@ -38,8 +38,8 @@ extension UIImage {
 
     // Check if 2 images are identical.
     public func isEqualTo(_ image: UIImage) -> Bool {
-        let data1: Data? = UIImagePNGRepresentation(self)
-        let data2: Data? = UIImagePNGRepresentation(image)
+        let data1: Data? = self.pngData()
+        let data2: Data? = image.pngData()
         
         return data1 == data2
     }

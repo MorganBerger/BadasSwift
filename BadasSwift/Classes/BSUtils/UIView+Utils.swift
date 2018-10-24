@@ -148,6 +148,18 @@ public extension UIView {
         })
     }
     
+    // Animate corner radius on any instanciated UIView
+    func addCornerRadiusAnimation(to: CGFloat, duration: CFTimeInterval)
+    {
+        let animation = CABasicAnimation(keyPath:"cornerRadius")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.fromValue = layer.cornerRadius
+        animation.toValue = to
+        animation.duration = duration
+        layer.add(animation, forKey: "cornerRadius")
+        layer.cornerRadius = to
+    }
+    
     func putBorders(color:UIColor) {
         self.layer.borderWidth = 1.0
         self.layer.borderColor = color.cgColor

@@ -85,7 +85,7 @@ class AwesomePageControl: UIView {
         
         for button in (buttonsStackView?.subviews)! {
             if button is UIButton {
-                (button as? UIButton)?.addTarget(self, action: #selector(didTapButton(_:)), for: UIControlEvents.touchUpInside)
+                (button as? UIButton)?.addTarget(self, action: #selector(didTapButton(_:)), for: UIControl.Event.touchUpInside)
                 (button as? UIButton)?.adjustsImageWhenHighlighted = false
                 buttons.append(button as? UIButton)
             }
@@ -104,7 +104,7 @@ class AwesomePageControl: UIView {
             cursorView?.frame = CGRect(x: 0, y: 0, width: w, height: cursorView.frame.size.height)
             cursorView?.layer.cornerRadius = 12
             
-            buttons[1]?.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
+            buttons[1]?.imageEdgeInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
             buttons[1]?.imageView?.contentMode = .scaleAspectFit
             
             let tabNumber = (buttons[1]?.titleLabel?.text == nil ? 0 : Int((buttons[1]?.titleLabel?.text)!))
@@ -134,7 +134,7 @@ class AwesomePageControl: UIView {
             titleInsets.left  = -(imageSize.width + 1) / 2
             
             let labelString = NSString(string: text)
-            let titleSize = labelString.size(withAttributes: [NSAttributedStringKey.font: font])
+            let titleSize = labelString.size(withAttributes: [NSAttributedString.Key.font: font])
             
             imageInsets.left = ((titleSize.width) / 2) + 5
             imageInsets.right = -((titleSize.width + 1) / 2) + 5
@@ -163,7 +163,7 @@ class AwesomePageControl: UIView {
         
         let imageName = "\(self.buttonsImagesNames[index]!)Selected"
         
-        UIView.transition(with: buttons[index]!, duration: 0.3, options: UIViewAnimationOptions.transitionCrossDissolve, animations: {
+        UIView.transition(with: buttons[index]!, duration: 0.3, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
             
             let bundle = Bundle(for: self.classForCoder)
             self.buttons[index]?.setImage(UIImage(named: imageName, in: bundle, compatibleWith: nil), for: .normal)
