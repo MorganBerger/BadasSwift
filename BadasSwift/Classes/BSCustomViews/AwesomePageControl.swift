@@ -161,7 +161,7 @@ class AwesomePageControl: UIView {
         }
         
         let imageName = "\(self.buttonsImagesNames[index]!)Selected"
-        
+        //truc
         UIView.transition(with: buttons[index]!, duration: 0.3, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
             
             let bundle = Bundle(for: self.classForCoder)
