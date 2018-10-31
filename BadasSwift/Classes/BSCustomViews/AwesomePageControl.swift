@@ -82,7 +82,6 @@ class AwesomePageControl: UIView {
     func setup() {
         
         var i = 1
-        
         for button in (buttonsStackView?.subviews)! {
             if button is UIButton {
                 (button as? UIButton)?.addTarget(self, action: #selector(didTapButton(_:)), for: UIControl.Event.touchUpInside)
