@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIImageViewAligned.h"
 #import "VoteView.h"
 
 FOUNDATION_EXPORT double BadasSwiftVersionNumber;
