@@ -177,6 +177,8 @@ public extension UIView {
         gradient.frame = self.bounds
         gradient.colors = colors;
         
+        gradient.cornerRadius = self.layer.cornerRadius
+        
         let startPoint:CGPoint!
         let endPoint:CGPoint!
         
