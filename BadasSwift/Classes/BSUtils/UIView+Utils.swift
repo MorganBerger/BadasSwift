@@ -165,12 +165,34 @@ public extension UIView {
         self.layer.borderColor = color.cgColor
     }
     
-    func putGradient(_ colors:CGColor...) {
+    enum GradientDirection:Int {
+        case horizontal = 0
+        case vertical
+    }
+    
+    func putGradient(direction:UIView.GradientDirection , colors:CGColor...) {
         
         let gradient:CAGradientLayer = CAGradientLayer()
         
         gradient.frame = self.bounds
         gradient.colors = colors;
+        
+        let startPoint:CGPoint!
+        let endPoint:CGPoint!
+        
+        switch direction {
+        case .horizontal:
+            startPoint = CGPoint(x: 0.0, y: 0.5)
+            endPoint = CGPoint(x: 1.0, y: 0.5)
+            break
+        case .vertical:
+            startPoint = CGPoint(x: 0.5, y: 0.0)
+            endPoint = CGPoint(x: 0.5, y: 1.0)
+            break
+        }
+        
+        gradient.startPoint = startPoint
+        gradient.endPoint = endPoint
         
         self.layer.insertSublayer(gradient, at: 0)
     }
