@@ -9,3 +9,4 @@ before_install:
   - gem install cocoapods --pre
   - cd Example/
   - pod install --repo-update
+  - cd ../
