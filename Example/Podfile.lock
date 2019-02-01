@@ -1,7 +1,7 @@
 PODS:
-  - BadasSwift (0.1.6.1):
-    - BadasSwift/Resources (= 0.1.6.1)
-  - BadasSwift/Resources (0.1.6.1)
+  - BadasSwift (0.1.6.2):
+    - BadasSwift/Resources (= 0.1.6.2)
+  - BadasSwift/Resources (0.1.6.2)
 
 DEPENDENCIES:
   - BadasSwift (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BadasSwift: 77c6682515e458b10fa20a416b431020387be723
+  BadasSwift: fe23ba08e69efd7ca2c1d8f0e06561f86e5c6a18
 
 PODFILE CHECKSUM: 4dea812628ee4a664ebcd200b68a03efd218942a
 
