@@ -174,7 +174,7 @@ public extension UIView {
     
     func putGradient(direction:UIView.GradientDirection , colors:CGColor...) {
         
-        let gradient:CAGradientLayer = CAGradientLayer()
+        let gradient:CAGradientLayer = CAGradientLayer() 
         
         gradient.frame = self.bounds
         gradient.colors = colors;

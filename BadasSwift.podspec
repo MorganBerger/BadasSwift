@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BadasSwift'
-  s.version          = '0.1.6.1'
+  s.version          = '0.1.6.2'
   s.summary          = 'A colourful library of Swift base classes extensions & customed stuff!'
   s.swift_version    = '4.2'
   
