@@ -168,6 +168,8 @@ public extension UIView {
     enum GradientDirection:Int {
         case horizontal = 0
         case vertical
+        case diagonalDesc
+        case diagonalAsc
     }
     
     func putGradient(direction:UIView.GradientDirection , colors:CGColor...) {
@@ -190,6 +192,14 @@ public extension UIView {
         case .vertical:
             startPoint = CGPoint(x: 0.5, y: 0.0)
             endPoint = CGPoint(x: 0.5, y: 1.0)
+            break
+        case .diagonalDesc:
+            startPoint = CGPoint(x: 0.0, y: 0.0)
+            endPoint = CGPoint(x: 1.0, y: 1.0)
+            break
+        case .diagonalAsc:
+            startPoint = CGPoint(x: 0.0, y: 1.0)
+            endPoint = CGPoint(x: 1.0, y: 0.0)
             break
         }
         

@@ -31,6 +31,8 @@
 /* Begin PBXFileReference section */
 		0140BBBF1D3C8FC64AB8C7E6 /* Pods-BadasSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1F7684B443BB2E5E1F0BBA6B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2CF1A86928055A9B0B7F069C /* Pods-BadasSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		345F770FBF5F45C104637396 /* Pods-BadasSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BadasSwift_Tests/Pods-BadasSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BA9FC1FB55B73A9998C9344 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4D98032B56B1A08F572900F9 /* BadasSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BadasSwift.podspec; path = ../BadasSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* BadasSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadasSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +45,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		742AA153EF406DC4E5F70674 /* Pods_BadasSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BadasSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		793A6E61283085C4575163B4 /* Pods-BadasSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9025712B21749A50000F3303 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90787E112173CD6E007C37DA /* BadasSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BadasSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EC5BAF1C7BA579333BAA56 /* Pods-BadasSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-BadasSwift_Tests/Pods-BadasSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A89DB90C2E38E97FDACA3C57 /* Pods-BadasSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BadasSwift_Tests/Pods-BadasSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C180FB1ABABEB2906752735E /* Pods_BadasSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BadasSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE98FA8ACC4AAF353D563618 /* Pods-BadasSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BadasSwift_Tests/Pods-BadasSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDDEE065642298A9940ECD31 /* Pods-BadasSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BadasSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +163,10 @@
 				FDDEE065642298A9940ECD31 /* Pods-BadasSwift_Example.release.xcconfig */,
 				CE98FA8ACC4AAF353D563618 /* Pods-BadasSwift_Tests.debug.xcconfig */,
 				92EC5BAF1C7BA579333BAA56 /* Pods-BadasSwift_Tests.release.xcconfig */,
+				2CF1A86928055A9B0B7F069C /* Pods-BadasSwift_Example.debug.xcconfig */,
+				793A6E61283085C4575163B4 /* Pods-BadasSwift_Example.release.xcconfig */,
+				345F770FBF5F45C104637396 /* Pods-BadasSwift_Tests.debug.xcconfig */,
+				A89DB90C2E38E97FDACA3C57 /* Pods-BadasSwift_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -318,7 +326,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BadasSwift/BadasSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -329,7 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -489,7 +497,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0140BBBF1D3C8FC64AB8C7E6 /* Pods-BadasSwift_Example.debug.xcconfig */;
+			baseConfigurationReference = 2CF1A86928055A9B0B7F069C /* Pods-BadasSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2XLG969NQF;
@@ -505,7 +513,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDEE065642298A9940ECD31 /* Pods-BadasSwift_Example.release.xcconfig */;
+			baseConfigurationReference = 793A6E61283085C4575163B4 /* Pods-BadasSwift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2XLG969NQF;
@@ -521,7 +529,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE98FA8ACC4AAF353D563618 /* Pods-BadasSwift_Tests.debug.xcconfig */;
+			baseConfigurationReference = 345F770FBF5F45C104637396 /* Pods-BadasSwift_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -542,7 +550,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92EC5BAF1C7BA579333BAA56 /* Pods-BadasSwift_Tests.release.xcconfig */;
+			baseConfigurationReference = A89DB90C2E38E97FDACA3C57 /* Pods-BadasSwift_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
