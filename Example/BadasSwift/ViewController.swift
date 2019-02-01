@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let color1 = UIColor(red: 167/255, green: 200/255, blue: 255/255, alpha: 1).cgColor
         let color2 = UIColor(red: 99/255, green: 153/255, blue: 242/255, alpha: 1).cgColor
         
-        self.view.putGradient(direction: .horizontal, colors: color1, color2)
+        self.view.putGradient(direction: .diagonalDesc, colors: color1, color2)
         
         let str:String = "Hello World!"
         print("String : '\(str)'")
