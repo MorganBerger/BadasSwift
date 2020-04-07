@@ -12,7 +12,7 @@ public extension UIView {
 
     //MARK: - Shorcut to frame values with setters.
     
-    public var width: CGFloat {
+    var width: CGFloat {
         get { return self.frame.size.width }
         set {
             var frame = self.frame
@@ -21,7 +21,7 @@ public extension UIView {
         }
     }
     
-    public var height: CGFloat {
+    var height: CGFloat {
         get { return self.frame.size.height }
         set {
             var frame = self.frame
@@ -30,7 +30,7 @@ public extension UIView {
         }
     }
     
-    public var size: CGSize  {
+    var size: CGSize  {
         get { return self.frame.size }
         set {
             var frame = self.frame
@@ -39,7 +39,7 @@ public extension UIView {
         }
     }
     
-    public var origin: CGPoint {
+    var origin: CGPoint {
         get { return self.frame.origin }
         set {
             var frame = self.frame
@@ -48,7 +48,7 @@ public extension UIView {
         }
     }
     
-    public var x: CGFloat {
+    var x: CGFloat {
         get { return self.frame.origin.x }
         set {
             var frame = self.frame
@@ -56,7 +56,7 @@ public extension UIView {
             self.frame = frame
         }
     }
-    public var y: CGFloat {
+    var y: CGFloat {
         get { return self.frame.origin.y }
         set {
             var frame = self.frame
@@ -65,21 +65,21 @@ public extension UIView {
         }
     }
     
-    public var centerX: CGFloat {
+    var centerX: CGFloat {
         get { return self.center.x }
         set {
             self.center = CGPoint(x: newValue, y: self.center.y)
         }
     }
     
-    public var centerY: CGFloat {
+    var centerY: CGFloat {
         get { return self.center.y }
         set {
             self.center = CGPoint(x: self.center.x, y: newValue)
         }
     }
     
-    public var top : CGFloat {
+    var top : CGFloat {
         get { return self.frame.origin.y }
         set {
             var frame = self.frame
@@ -105,7 +105,7 @@ public extension UIView {
      }
      }  working on it */
     
-    public var left : CGFloat {
+    var left : CGFloat {
         get { return self.frame.origin.x }
         set {
             var frame = self.frame
@@ -123,29 +123,37 @@ public extension UIView {
     }
     
     func showWithDuration(_ duration:Double) {
-        UIView.animate(withDuration: duration) {
-            self.alpha = 1.0
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: duration) {
+                self.alpha = 1.0
+            }
         }
     }
     func hideWithDuration(_ duration:Double) {
-        UIView.animate(withDuration: duration) {
-            self.alpha = 0.0
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: duration) {
+                self.alpha = 0.0
+            }
         }
     }
     
     func showWithDuration(_ duration:Double, completion:@escaping () -> Void) {
-        UIView.animate(withDuration: duration, animations: {
-            self.alpha = 1.0
-        }, completion: { (finished) in
-            completion()
-        })
+        DispatchQueue.main.sync {
+            UIView.animate(withDuration: duration, animations: {
+                self.alpha = 1.0
+            }, completion: { (finished) in
+                completion()
+            })
+        }
     }
     func hideWithDuration(_ duration:Double, completion:@escaping () -> Void) {
-        UIView.animate(withDuration: duration, animations: {
-            self.alpha = 0.0
-        }, completion: { (finished) in
-            completion()
-        })
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: duration, animations: {
+                self.alpha = 0.0
+            }, completion: { (finished) in
+                completion()
+            })
+        }
     }
     
     // Animate corner radius on any instanciated UIView
@@ -172,11 +180,11 @@ public extension UIView {
         case diagonalAsc
     }
     
-    func putGradient(direction:UIView.GradientDirection , colors:CGColor...) {
+    func putGradient(dir:UIView.GradientDirection, frame:CGRect, colors:[CGColor]) {
         
-        let gradient:CAGradientLayer = CAGradientLayer() 
+        let gradient:CAGradientLayer = CAGradientLayer()
         
-        gradient.frame = self.bounds
+        gradient.frame = frame
         gradient.colors = colors;
         
         gradient.cornerRadius = self.layer.cornerRadius
@@ -184,7 +192,7 @@ public extension UIView {
         let startPoint:CGPoint!
         let endPoint:CGPoint!
         
-        switch direction {
+        switch dir {
         case .horizontal:
             startPoint = CGPoint(x: 0.0, y: 0.5)
             endPoint = CGPoint(x: 1.0, y: 0.5)
@@ -207,6 +215,10 @@ public extension UIView {
         gradient.endPoint = endPoint
         
         self.layer.insertSublayer(gradient, at: 0)
+    }
+    
+    func putGradient(direction:UIView.GradientDirection , colors:CGColor...) {
+        self.putGradient(dir: direction, frame: self.bounds, colors: colors)
     }
     
     var rootView:UIView {

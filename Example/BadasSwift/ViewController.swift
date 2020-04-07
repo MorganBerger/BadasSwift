@@ -48,17 +48,11 @@ class ViewController: UIViewController {
         
         print("Today's date is: \(date.formatedString("EEEE, MMM d, yyyy"))")
         
-        let image = imgView.image!.convertToGrayScale()
-        imgView.image = image
+        var img = imgView.image
+        imgView.image = img?.cropToBounds(width: 70, height: 70)
         
-        imgView.setImageWithUrlString("https://objectivec2swift.com/img/logo-text.png") { (img) in
-            
-            if (img != nil) {
-                self.imgCenterY.animateConstraintTo(-100, for: self.view, duration: 1, completion: {
-                    self.imgCenterY.animateConstraintTo(100.0, for: self.view, duration: 0.5)
-                })
-            }
-        }
+        imgView.putBorders(color: .purple)
+        imgView.contentMode = .scaleAspectFit
         
     }
 

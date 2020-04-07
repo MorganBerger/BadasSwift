@@ -39,12 +39,12 @@ public extension String {
         return digestData
     }
     
-    public func MD5Hex() -> String {
+    func MD5Hex() -> String {
         let md5Hex =  self.MD5Data().map { String(format: "%02hhx", $0) }.joined()
         return md5Hex
     }
     
-    public func MD5base64() -> String {
+    func MD5base64() -> String {
         return self.MD5Data().base64EncodedString()
     }
 }
