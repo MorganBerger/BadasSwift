@@ -271,21 +271,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BadasSwift/BadasSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BadasSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BadasSwift_Example/Pods-BadasSwift_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1D945AE7CD8160934B001CAB /* [CP] Check Pods Manifest.lock */ = {

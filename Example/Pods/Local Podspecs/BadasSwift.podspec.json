@@ -1,8 +1,8 @@
 {
   "name": "BadasSwift",
-  "version": "0.1.6.2",
+  "version": "0.1.7",
   "summary": "A colourful library of Swift base classes extensions & customed stuff!",
-  "swift_version": "4.2",
+  "swift_versions": "4.2",
   "description": "A colourful library of Swift base classes extensions & customed stuff!\n-> Currently a work in progress. Lot of cleaning to do here!",
   "homepage": "https://github.com/morganberger/BadasSwift",
   "license": {
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/morganberger/BadasSwift.git",
-    "tag": "0.1.6.2"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "9.3"
@@ -38,5 +38,6 @@
         ]
       }
     }
-  ]
+  ],
+  "swift_version": "4.2"
 }
