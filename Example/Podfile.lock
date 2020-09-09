@@ -2,6 +2,8 @@ PODS:
   - BadasSwift (0.1.8):
     - BadasSwift/Resources (= 0.1.8)
     - SwiftyJSON (~> 5.0.0)
+  - BadasSwift/Resources (0.1.8):
+    - SwiftyJSON (~> 5.0.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -19,6 +21,6 @@ SPEC CHECKSUMS:
   BadasSwift: 42bfdeea1066877f8397e466e36b7d2cce229e61
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 4dea812628ee4a664ebcd200b68a03efd218942a
+PODFILE CHECKSUM: 3b1d515ecf595687a6f7dd8db60c94c2a17adbc8
 
 COCOAPODS: 1.9.3
