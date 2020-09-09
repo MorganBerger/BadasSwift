@@ -9,6 +9,10 @@ import UIKit
 
 public extension NSLayoutConstraint {
     
+    func constraintWithMultiplier(_ multiplier: CGFloat) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: self.firstItem!, attribute: self.firstAttribute, relatedBy: self.relation, toItem: self.secondItem, attribute: self.secondAttribute, multiplier: multiplier, constant: self.constant)
+    }
+    
     func animateConstraintTo(_ value:CGFloat, for view:UIView, duration:Double) {
         
         UIView.animate(withDuration: duration) {
@@ -27,8 +31,13 @@ public extension NSLayoutConstraint {
         }
     }
     
+    /**
+    Change multiplier constraint
+    
+    - parameter multiplier: CGFloat
+    - returns: NSLayoutConstraint
+    */
     func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
-        
         NSLayoutConstraint.deactivate([self])
         
         let newConstraint = NSLayoutConstraint(

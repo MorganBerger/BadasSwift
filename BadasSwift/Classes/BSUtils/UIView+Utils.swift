@@ -122,39 +122,31 @@ public extension UIView {
         }
     }
     
-    func showWithDuration(_ duration:Double) {
-        DispatchQueue.main.async {
-            UIView.animate(withDuration: duration) {
-                self.alpha = 1.0
-            }
+    func show(_ duration:Double = 0.2, completion: (() -> Void)? = nil) {
+        animate(duration, animate: {
+            self.alpha = 1.0
+        }) {
+            completion?()
         }
     }
-    func hideWithDuration(_ duration:Double) {
+    func hide(_ duration:Double = 0.2, completion: (() -> Void)? = nil) {
+        animate(duration, animate: {
+            self.alpha = 0
+        }) {
+            completion?()
+        }
+    }
+    func animate(_ duration:Double = 0.2, animate:(() -> Void)? = nil, completion:(() -> Void)? = nil) {
         DispatchQueue.main.async {
-            UIView.animate(withDuration: duration) {
-                self.alpha = 0.0
+            UIView.animate(withDuration: duration, animations: {
+                animate?()
+            }) { complete in
+                if complete { completion?() }
             }
         }
     }
     
-    func showWithDuration(_ duration:Double, completion:@escaping () -> Void) {
-        DispatchQueue.main.sync {
-            UIView.animate(withDuration: duration, animations: {
-                self.alpha = 1.0
-            }, completion: { (finished) in
-                completion()
-            })
-        }
-    }
-    func hideWithDuration(_ duration:Double, completion:@escaping () -> Void) {
-        DispatchQueue.main.async {
-            UIView.animate(withDuration: duration, animations: {
-                self.alpha = 0.0
-            }, completion: { (finished) in
-                completion()
-            })
-        }
-    }
+    
     
     // Animate corner radius on any instanciated UIView
     func addCornerRadiusAnimation(to: CGFloat, duration: CFTimeInterval)

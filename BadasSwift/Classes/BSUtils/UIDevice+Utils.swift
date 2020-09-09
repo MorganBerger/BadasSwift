@@ -78,4 +78,25 @@ public extension UIDevice {
         default:                                        return machineString
         }
     }
+    
+    var hasNotch: Bool {
+        switch UIScreen.main.nativeBounds.height {
+        case 960:
+            return false
+        case 1136:
+            return false
+        case 1334:
+            return false
+        case 1792:
+            return true
+        case 1920, 2208:
+            return false
+        case 2436:
+            return true
+        case 2688:
+            return true
+        default:
+            return false
+        }
+    }
 }

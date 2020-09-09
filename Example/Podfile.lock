@@ -1,18 +1,24 @@
 PODS:
-  - BadasSwift (0.1.7):
-    - BadasSwift/Resources (= 0.1.7)
-  - BadasSwift/Resources (0.1.7)
+  - BadasSwift (0.1.8):
+    - BadasSwift/Resources (= 0.1.8)
+    - SwiftyJSON (~> 5.0.0)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - BadasSwift (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   BadasSwift:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BadasSwift: dc003fe2a025532dcfe530c8ff2649d31a9152c8
+  BadasSwift: 42bfdeea1066877f8397e466e36b7d2cce229e61
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
 PODFILE CHECKSUM: 4dea812628ee4a664ebcd200b68a03efd218942a
 
-COCOAPODS: 1.8.0
+COCOAPODS: 1.9.3

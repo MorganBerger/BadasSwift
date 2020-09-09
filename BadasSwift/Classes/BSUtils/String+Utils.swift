@@ -10,7 +10,7 @@ import Foundation
 import CommonCrypto
 
 public extension String {
-    
+
     var html2AttributedString: NSAttributedString? {
         guard
             let data = data(using: String.Encoding.utf8)
@@ -27,25 +27,43 @@ public extension String {
         return html2AttributedString?.string ?? ""
     }
     
-    func MD5Data() -> Data {
-        let messageData = self.data(using:.utf8)!
-        var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
-        
-        _ = digestData.withUnsafeMutableBytes {digestBytes in
-            messageData.withUnsafeBytes {messageBytes in
-                CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
+//    func MD5Data() -> Data {
+//        let messageData = self.data(using:.utf8)!
+//        var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
+//
+//        _ = digestData.withUnsafeMutableBytes {digestBytes in
+//            messageData.withUnsafeBytes {messageBytes in
+//                CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
+//            }
+//        }
+//        return digestData
+//    }
+    
+//    func MD5Hex() -> String {
+//        let md5Hex =  self.MD5Data().map { String(format: "%02hhx", $0) }.joined()
+//        return md5Hex
+//    }
+//    
+//    func MD5base64() -> String {
+//        return self.MD5Data().base64EncodedString()
+//    }
+    
+    func unescape() -> String? {
+        return self.removingPercentEncoding
+    }
+    
+    func matches(for regex: String) -> [String] {
+        do {
+            let regex = try NSRegularExpression(pattern: regex)
+            let results = regex.matches(in: self, range:  NSRange(self.startIndex..., in: self))
+            return results.map {
+                //self.substring(with: Range($0.range, in: self)!)
+                String(self[Range($0.range, in: self)!])
             }
+        } catch let error {
+            print("invalid regex: \(error.localizedDescription)")
+            return []
         }
-        return digestData
-    }
-    
-    func MD5Hex() -> String {
-        let md5Hex =  self.MD5Data().map { String(format: "%02hhx", $0) }.joined()
-        return md5Hex
-    }
-    
-    func MD5base64() -> String {
-        return self.MD5Data().base64EncodedString()
     }
 }
 

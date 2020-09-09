@@ -23,4 +23,13 @@ extension UIButton {
 //        let/ edgeOffset = abs(titleSize.height - imageSize.height) / 2.0;
 //        self.contentEdgeInsets = UIEdgeInsets(top: edgeOffset, left: 0.0, bottom: edgeOffset, right: 0.0)
     }
+    
+    func setImageRenderingMode(_ renderMode: UIImage.RenderingMode) {
+        assert(imageView != nil, "Image must be set before setting rendering mode")
+        // AlwaysOriginal as an example
+        if var image = imageView!.image {
+            image = image.withRenderingMode(renderMode)
+        }
+    }
+    
 }

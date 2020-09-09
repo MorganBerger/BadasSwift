@@ -4,6 +4,148 @@
    <FileRef
       location = "group:BadasSwift.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Pods"
+      name = "Development Pods">
+      <Group
+         location = "group:Pods/../.."
+         name = "BadasSwift">
+         <Group
+            location = "group:../BadasSwift/Classes/BSCustomModels"
+            name = "BSCustomModels">
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSCustomModels/SnappingCollectionViewLayout.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSCustomModels/UIImageViewAligned.h">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSCustomModels/UIImageViewAligned.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:../BadasSwift/Classes/BSCustomViews"
+            name = "BSCustomViews">
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSCustomViews/AwesomePageControl.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSCustomViews/VoteView.h">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSCustomViews/VoteView.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:../BadasSwift/Classes/BSUtils"
+            name = "BSUtils">
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/Bundle+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/CharacterSet+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/CLLocationManager+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/Date+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/NSLayoutConstraint+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/String+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/UIButton+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/UIDevice+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/UIImage+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/UIImageView+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/UIView+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/UIViewController+Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:../BadasSwift/Classes/BSUtils/URL+Utils.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:.."
+            name = "Pod">
+            <FileRef
+               location = "group:../BadasSwift.podspec"
+               assignedFileDataType = "public.ruby-script">
+            </FileRef>
+            <FileRef
+               location = "group:../LICENSE">
+            </FileRef>
+            <FileRef
+               location = "group:../README.md">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:.."
+            name = "Resources">
+            <Group
+               location = "group:../BadasSwift/Assets"
+               name = "Assets">
+               <FileRef
+                  location = "group:../BadasSwift/Assets/assets.xcassets">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:../BadasSwift/Classes"
+               name = "Classes">
+               <Group
+                  location = "group:../BadasSwift/Classes/BSCustomViews"
+                  name = "BSCustomViews">
+                  <FileRef
+                     location = "group:../BadasSwift/Classes/BSCustomViews/AwesomePageControl.xib">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:.."
+               name = "Resources">
+            </Group>
+         </Group>
+         <Group
+            location = "group:Pods/Target Support Files/BadasSwift"
+            name = "Support Files">
+            <FileRef
+               location = "group:Pods/Target Support Files/BadasSwift/BadasSwift.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:Pods/Target Support Files/BadasSwift/BadasSwift.xcconfig">
+            </FileRef>
+            <FileRef
+               location = "group:Pods/Target Support Files/BadasSwift/BadasSwift-dummy.m">
+            </FileRef>
+            <FileRef
+               location = "group:Pods/Target Support Files/BadasSwift/BadasSwift-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Pods/Target Support Files/BadasSwift/BadasSwift-prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:Pods/Target Support Files/BadasSwift/BadasSwift-umbrella.h">
+            </FileRef>
+            <FileRef
+               location = "group:Pods/Target Support Files/BadasSwift/ResourceBundle-BadasSwift-BadasSwift-Info.plist">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

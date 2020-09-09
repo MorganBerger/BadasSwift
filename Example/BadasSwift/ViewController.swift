@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         
         let str:String = "Hello World!"
         print("String : '\(str)'")
-        print("MD5 Hex: \(str.MD5Hex())")
-        print("MD5 b64: \(str.MD5base64())")
+//        print("MD5 Hex: \(str.MD5Hex())")
+//        print("MD5 b64: \(str.MD5base64())")
         print("-----------------------------\n")
         
         print("Location manager is authorized: \(CLLocationManager.isAuthorized)")
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         
         print("Today's date is: \(date.formatedString("EEEE, MMM d, yyyy"))")
         
-        var img = imgView.image
+        let img = imgView.image
         imgView.image = img?.cropToBounds(width: 70, height: 70)
         
         imgView.putBorders(color: .purple)
